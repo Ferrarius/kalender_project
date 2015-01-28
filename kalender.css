@@ -1,0 +1,69 @@
+#kalender {
+    width: 1444px;
+}
+#kalenderHeader {
+    width: 1444px;
+    height: 100px;
+    background-color: #CCE5FF;
+    font-family: Calibri;
+    font-size: 50px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 5px;
+    margin-bottom: -1px;
+}
+#kalenderHeader p {
+    margin-top: 17px;
+    display: inline-block;
+    width: 300px;
+}
+.kalenderHeaderOnderdeel {
+    width: 465px;
+    display: inline;
+}
+.kalenderHeaderOnderdeel p {
+    text-align: center;
+}
+#kalenderHeaderMaand {
+    margin-right: 250px;
+}
+#kalenderHeaderJaar {
+    margin-left: 250px;
+}
+.knop {
+    margin: 20px;
+    font-size: 60px;
+    text-decoration: none;
+    color: blue;
+}
+#kalenderBody {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 1444px;
+}
+table * {
+    font-family: Calibri;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+table th {
+    width: 200px;
+    background-color: #99CCFF;
+}
+table td {
+    vertical-align: top;
+    padding-left: 8px;
+    height: 100px;
+    background-color: #CCE5FF;
+}
+.blauw {
+    background-color: #99CCFF;
+}
+.blauw:hover {
+    background-color: #66B2FF;
+}
+.hDag {
+    background-color: #66B2FF;
+    border: 3px solid black;
+}

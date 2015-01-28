@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="kalender.css" type="text/css"/>
+    <title></title>
+</head>
+<body>
+    <div id="kalender">
+        <div id="kalenderHeader">
+            <div id="kalenderHeaderMaand" class="kalenderHeaderOnderdeel">
+                <a href="kalender.php?jaar={VORIGMAANDJAAR}&maand={VORIGEMAAND}" id="vorigeMaand" class="knop"><</a>
+                <p>{MAANDNAAM}</p>
+                <a href="kalender.php?jaar={VOLGENDMAANDJAAR}&maand={VOLGENDEMAAND}" id="volgendeMaand" class="knop">></a>
+            </div>
+            <div id="kalenderHeaderJaar" class="kalenderHeaderOnderdeel">
+                <a href="kalender.php?jaar={VORIGJAAR}&maand={MAAND}" id="vorigJaar" class="knop"><</a>
+                <p>{JAAR}</p>
+                <a href="kalender.php?jaar={VOLGENDJAAR}&maand={MAAND}" id="volgendJaar" class="knop">></a>
+            </div>
+        </div>
+        <div id="kalenderBody">
+            <table>
+                <tr>
+                    <th>Maandag</th>
+                    <th>Dinsdag</th>
+                    <th>Woensdag</th>
+                    <th>Donderdag</th>
+                    <th>Vrijdag</th>
+                    <th>Zaterdag</th>
+                    <th>Zondag</th>
+                </tr>
+
+                <!-- START BLOCK : RIJ -->
+                <tr>
+                    <!-- START BLOCK : DAG -->
+                    <td {KLEUR}>{DAGNR}{VOLDAGNR}{NAAM}</td>
+                    <!-- END BLOCK : DAG -->
+                </tr>
+                <!-- END BLOCK : RIJ -->
+            </table>
+        </div>
+        <div id="HuidigeMaandKnop">
+            <a href="kalender.php">Huidige maand</a>
+        </div>
+    </div>
+</body>
+</html>
